@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AppVersion="2.0" Author="LexmanCAD" ProductCode="{5FB8C11B-C088-40BF-BF75-7703D4BFA26F}" Name="Flatten" Icon="./Contents/Resources/Flatten.ico" AutodeskProduct="AutoCAD" Description="Convert a 3D polyline into a 2D polyline at user-specified elevation." FriendlyVersion="1.0.0" ProductType="Application" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" UpgradeCode="{47E30996-BE22-469E-9AFA-C45E9A6F9C1A}" OnlineDocumentation="www.facebook.com/LexmanCAD" HelpFile="./Contents/help.htm">
+  <CompanyDetails Name="LexmanCAD" Email="Lexman@LexmanCAD.com" Url="www.facebook.com/LexmanCAD" Phone=" " />
+  <Components Description="2012 to 2015 parts">
+    <RuntimeRequirements SupportPath="./Contents" OS="Win32|Win64" Platform="AutoCAD|Civil3D|Civil|ADT|ecscad|ACADE|ACADM|MEP|PNID|Plant3D" SeriesMin="R18.2" SeriesMax="R20.0" />
+    <ComponentEntry AppName="Flatten" Version="2.0" ModuleName="./Contents/Windows/Flatten.fas" AppDescription="Convert a 3D poly line into a 2D poly line placed at a user-specified elevation." PerDocument="True" LoadOnAutoCADStartup="True" LoadOnCommandInvocation="True">
+      <Commands>
+        <Command Local="LCAD_FLATTEN" Global="LCAD_FLATTEN" />
+        <Command Local="LCAD_RAISE" Global="LCAD_RAISE" />
+      </Commands>
+    </ComponentEntry>
+    <ComponentEntry AppName="Flatten" Version="2.0" ModuleName="./Contents/Windows/Flatten.cuix" AppDescription="Convert a 3D poly line into a 2D poly line placed at a user-specified elevation." PerDocument="False" LoadOnAutoCADStartup="True" LoadOnCommandInvocation="True" />
+  </Components>
+</ApplicationPackage>
